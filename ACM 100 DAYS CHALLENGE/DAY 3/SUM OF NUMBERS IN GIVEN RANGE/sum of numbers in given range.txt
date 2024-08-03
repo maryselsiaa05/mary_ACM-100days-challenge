@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int start, end, sum = 0;
+    
+    cout << "Enter the start of the range: ";
+    cin >> start;
+    cout << "Enter the end of the range: ";
+    cin >> end;
+    
+    for(int i = start; i <= end; i++) {
+        sum += i;
+    }
+    
+    cout << "The sum of numbers from " << start << " to " << end << " is: " << sum << endl;
+    
+    return 0;
+}
+

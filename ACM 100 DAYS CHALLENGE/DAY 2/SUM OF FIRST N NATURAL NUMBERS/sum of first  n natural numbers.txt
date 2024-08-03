@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Enter the number of elements: ";
+    cin >> N;
+
+    int *arr = new int[N]; // Dynamically allocate an array of size N
+    cout << "Enter " << N << " natural numbers: ";
+    for (int i = 0; i < N; ++i) {
+        cin >> arr[i];
+    }
+
+    int sum = 0;
+    for (int i = 0; i < N; ++i) {
+        sum += arr[i];
+    }
+
+    // Print the result
+    cout << "The sum of the given " << N << " natural numbers is: " << sum << endl;
+
+    delete[] arr; // Free the allocated memory
+    return 0;
+}
+
